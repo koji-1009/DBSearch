@@ -2,8 +2,6 @@ package com.app.dr1009.dbsearch.di
 
 import android.arch.lifecycle.ViewModel
 import android.arch.lifecycle.ViewModelProvider
-import com.app.dr1009.dailytodo.shared.ViewModelFactory
-import com.app.dr1009.dailytodo.shared.ViewModelKey
 import com.app.dr1009.dbsearch.MainViewModel
 import dagger.Binds
 import dagger.Module

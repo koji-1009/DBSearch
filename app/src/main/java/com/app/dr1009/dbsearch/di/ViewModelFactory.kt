@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.app.dr1009.dailytodo.shared
+package com.app.dr1009.dbsearch.di
 
 import android.arch.lifecycle.ViewModel
 import android.arch.lifecycle.ViewModelProvider
