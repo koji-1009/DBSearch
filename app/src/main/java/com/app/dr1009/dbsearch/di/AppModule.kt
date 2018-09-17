@@ -2,6 +2,7 @@ package com.app.dr1009.dbsearch.di
 
 import android.arch.persistence.room.Room
 import android.content.Context
+import com.app.dr1009.dbsearch.App
 import com.app.dr1009.dbsearch.db.WordDatabase
 import dagger.Module
 import dagger.Provides
@@ -9,6 +10,9 @@ import javax.inject.Singleton
 
 @Module
 internal class AppModule {
+
+    @Provides
+    fun provideContext(app: App): Context = app.applicationContext
 
     @Singleton
     @Provides

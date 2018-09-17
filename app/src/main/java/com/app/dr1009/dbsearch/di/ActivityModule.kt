@@ -2,6 +2,7 @@ package com.app.dr1009.dbsearch.di
 
 import com.app.dr1009.dbsearch.FragmentModule
 import com.app.dr1009.dbsearch.MainActivity
+import com.app.dr1009.dbsearch.MainModule
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -9,6 +10,6 @@ import dagger.android.ContributesAndroidInjector
 internal abstract class ActivityModule {
 
     @ActivityScoped
-    @ContributesAndroidInjector
+    @ContributesAndroidInjector(modules = [MainModule::class])
     internal abstract fun contributesMainActivity(): MainActivity
 }
