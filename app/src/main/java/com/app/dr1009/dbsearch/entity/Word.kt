@@ -6,5 +6,5 @@ import android.arch.persistence.room.PrimaryKey
 @Entity
 data class Word(
         @PrimaryKey(autoGenerate = true)
-        val id: Int = 0,
+        var id: Int = 0,
         val word: String)

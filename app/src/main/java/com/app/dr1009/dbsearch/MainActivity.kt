@@ -23,9 +23,9 @@ class MainActivity : DaggerAppCompatActivity() {
         binding.setLifecycleOwner(this)
         binding.viewModel = viewModel
 
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+        binding.fab.setOnClickListener {
+            val dialog = AddWordDialog()
+            dialog.show(supportFragmentManager, "dialog")
         }
     }
 }

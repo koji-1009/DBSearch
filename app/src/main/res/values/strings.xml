@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DBSearch</string>
+    <string name="word">Word</string>
+    <string name="create">Create</string>
 </resources>

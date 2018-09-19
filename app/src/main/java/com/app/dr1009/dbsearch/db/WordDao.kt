@@ -15,6 +15,6 @@ interface WordDao {
     @Query("SELECT * FROM Word")
     fun allLoad(): LiveData<List<Word>>
 
-    @Query("SELECT * FROM WORD WHERE word LIKE :word")
+    @Query("SELECT * FROM Word WHERE word LIKE :word")
     fun loadSelect(word: String): LiveData<List<Word>>
 }
