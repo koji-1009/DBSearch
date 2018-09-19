@@ -15,11 +15,13 @@ class MainViewModel @Inject constructor(
 
     val text = MutableLiveData<String>().apply { postValue("") }
 
-    fun words(): LiveData<List<Word>> = Transformations.switchMap(text) {
-        if (it.isNullOrBlank()) {
-            dao.allLoad()
-        } else {
-            dao.loadSelect("%$it%")
+    fun words(): LiveData<List<Word>> {
+        return Transformations.switchMap(text) {
+            if (it.isNullOrBlank()) {
+                dao.allLoad()
+            } else {
+                dao.loadSelect("%$it%")
+            }
         }
     }
 

@@ -45,8 +45,8 @@
         </android.support.design.widget.AppBarLayout>
 
         <include
-            layout="@layout/content_main"
-            app:adapter="@{adapter}" />
+            android:id="@+id/include"
+            layout="@layout/content_main" />
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"

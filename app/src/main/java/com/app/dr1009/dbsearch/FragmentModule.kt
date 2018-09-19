@@ -7,8 +7,5 @@ import dagger.android.ContributesAndroidInjector
 internal abstract class FragmentModule {
 
     @ContributesAndroidInjector(modules = [MainModule::class])
-    internal abstract fun contributesMainActivityFragment(): MainActivityFragment
-
-    @ContributesAndroidInjector(modules = [MainModule::class])
     internal abstract fun contributesAppWordDialog(): AddWordDialog
 }
