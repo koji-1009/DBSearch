@@ -24,8 +24,8 @@ class MainActivity : DaggerAppCompatActivity() {
         binding.viewModel = viewModel
 
         val adapter = WordListAdapter()
-        viewModel.words().observe(this, Observer { adapter.submitList(it) })
-        binding.include!!.recycler!!.adapter = adapter
+        viewModel.words().observe(this, Observer(adapter::submitList))
+        binding.include!!.recycler.adapter = adapter
 
         binding.fab.setOnClickListener {
             val dialog = AddWordDialog()
