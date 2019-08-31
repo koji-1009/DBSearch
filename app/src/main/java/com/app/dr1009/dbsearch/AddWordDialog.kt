@@ -1,10 +1,10 @@
 package com.app.dr1009.dbsearch
 
 import android.app.Dialog
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import androidx.lifecycle.ViewModelProviders
 import com.app.dr1009.dbsearch.di.ViewModelFactory
 import dagger.android.support.DaggerAppCompatDialogFragment
 import javax.inject.Inject

@@ -1,9 +1,9 @@
 package com.app.dr1009.dbsearch
 
+import android.os.Bundle
+import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import androidx.databinding.DataBindingUtil
-import android.os.Bundle
 import com.app.dr1009.dbsearch.databinding.ActivityMainBinding
 import com.app.dr1009.dbsearch.di.ViewModelFactory
 import dagger.android.support.DaggerAppCompatActivity

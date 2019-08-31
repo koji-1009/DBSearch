@@ -1,7 +1,7 @@
 package com.app.dr1009.dbsearch.di
 
-import androidx.room.Room
 import android.content.Context
+import androidx.room.Room
 import com.app.dr1009.dbsearch.App
 import com.app.dr1009.dbsearch.db.WordDatabase
 import dagger.Module
