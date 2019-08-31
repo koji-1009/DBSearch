@@ -1,6 +1,6 @@
 package com.app.dr1009.dbsearch.di
 
-import android.arch.persistence.room.Room
+import androidx.room.Room
 import android.content.Context
 import com.app.dr1009.dbsearch.App
 import com.app.dr1009.dbsearch.db.WordDatabase

@@ -1,7 +1,7 @@
 package com.app.dr1009.dbsearch.db
 
-import android.arch.persistence.room.Database
-import android.arch.persistence.room.RoomDatabase
+import androidx.room.Database
+import androidx.room.RoomDatabase
 import com.app.dr1009.dbsearch.entity.Word
 
 @Database(entities = [Word::class], exportSchema = false, version = 1)

@@ -1,6 +1,6 @@
 package com.app.dr1009.dbsearch
 
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.ViewModel
 import com.app.dr1009.dbsearch.di.ViewModelKey
 import dagger.Binds
 import dagger.Module

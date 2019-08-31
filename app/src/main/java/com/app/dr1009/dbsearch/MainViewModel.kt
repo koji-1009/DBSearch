@@ -1,9 +1,9 @@
 package com.app.dr1009.dbsearch
 
-import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.MutableLiveData
-import android.arch.lifecycle.Transformations
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.Transformations
+import androidx.lifecycle.ViewModel
 import com.app.dr1009.dbsearch.db.WordDao
 import com.app.dr1009.dbsearch.entity.Word
 import javax.inject.Inject

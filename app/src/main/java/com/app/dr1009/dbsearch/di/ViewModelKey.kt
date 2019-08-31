@@ -16,7 +16,7 @@
 
 package com.app.dr1009.dbsearch.di
 
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.ViewModel
 import dagger.MapKey
 import kotlin.reflect.KClass
 

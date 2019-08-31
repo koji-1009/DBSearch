@@ -1,7 +1,7 @@
 package com.app.dr1009.dbsearch
 
 import android.app.Dialog
-import android.arch.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText

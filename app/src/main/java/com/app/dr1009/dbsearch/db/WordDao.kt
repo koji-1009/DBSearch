@@ -1,9 +1,9 @@
 package com.app.dr1009.dbsearch.db
 
-import android.arch.lifecycle.LiveData
-import android.arch.persistence.room.Dao
-import android.arch.persistence.room.Insert
-import android.arch.persistence.room.Query
+import androidx.lifecycle.LiveData
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.Query
 import com.app.dr1009.dbsearch.entity.Word
 
 @Dao
