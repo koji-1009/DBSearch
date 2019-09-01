@@ -20,7 +20,7 @@ internal object AppModule {
     @Singleton
     @Provides
     fun provideDB(context: Context): WordDatabase = Room
-            .databaseBuilder(context, WordDatabase::class.java, "DBSearch.db").build()
+        .databaseBuilder(context, WordDatabase::class.java, "DBSearch.db").build()
 
     @JvmStatic
     @Singleton

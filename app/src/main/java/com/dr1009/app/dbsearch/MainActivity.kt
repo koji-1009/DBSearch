@@ -16,7 +16,8 @@ class MainActivity : DaggerAppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
+        val binding =
+            DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
         setSupportActionBar(binding.toolbar)
 
         val viewModel = ViewModelProviders.of(this, factory).get(MainViewModel::class.java)
@@ -25,7 +26,7 @@ class MainActivity : DaggerAppCompatActivity() {
 
         val adapter = WordListAdapter()
         viewModel.words().observe(this, Observer(adapter::submitList))
-        binding.include!!.recycler.adapter = adapter
+        binding.include.recycler.adapter = adapter
 
         binding.fab.setOnClickListener {
             val dialog = AddWordDialog()

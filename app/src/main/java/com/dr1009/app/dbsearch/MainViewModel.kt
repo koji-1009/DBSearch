@@ -10,7 +10,7 @@ import javax.inject.Inject
 import kotlin.concurrent.thread
 
 class MainViewModel @Inject constructor(
-        private val dao: WordDao
+    private val dao: WordDao
 ) : ViewModel() {
 
     val text = MutableLiveData<String>().apply { postValue("") }

@@ -8,17 +8,15 @@ import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.dr1009.app.dbsearch.BR
-import com.dr1009.app.dbsearch.R
 import com.dr1009.app.dbsearch.entity.Word
 
 class WordListAdapter : ListAdapter<Word, WordListAdapter.ViewHolder>(DIFF_CALLBACK) {
 
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int): ViewHolder =
-            ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.card_layout, parent, false))
+        ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.card_layout, parent, false))
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) =
-            holder.bindTo(getItem(position))
+        holder.bindTo(getItem(position))
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 

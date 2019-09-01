@@ -8,11 +8,11 @@ import javax.inject.Singleton
 
 @Singleton
 @Component(
-        modules = [
-            AndroidSupportInjectionModule::class,
-            AppModule::class,
-            ActivityModule::class,
-            ViewModelModule::class]
+    modules = [
+        AndroidSupportInjectionModule::class,
+        AppModule::class,
+        ActivityModule::class,
+        ViewModelModule::class]
 )
 interface AppComponent : AndroidInjector<App> {
     @Component.Factory

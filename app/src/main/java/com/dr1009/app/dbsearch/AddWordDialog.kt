@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import androidx.lifecycle.ViewModelProviders
-import com.dr1009.app.dbsearch.R
 import com.dr1009.app.dbsearch.di.ViewModelFactory
 import dagger.android.support.DaggerAppCompatDialogFragment
 import javax.inject.Inject
