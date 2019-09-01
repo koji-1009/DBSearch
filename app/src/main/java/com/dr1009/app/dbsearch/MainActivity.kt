@@ -20,7 +20,7 @@ class MainActivity : DaggerAppCompatActivity() {
         setSupportActionBar(binding.toolbar)
 
         val viewModel = ViewModelProviders.of(this, factory).get(MainViewModel::class.java)
-        binding.setLifecycleOwner(this)
+        binding.lifecycleOwner = this
         binding.viewModel = viewModel
 
         val adapter = WordListAdapter()
