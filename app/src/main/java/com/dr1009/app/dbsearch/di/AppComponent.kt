@@ -15,6 +15,6 @@ import javax.inject.Singleton
             ViewModelModule::class]
 )
 interface AppComponent : AndroidInjector<App> {
-    @Component.Builder
-    abstract class Builder : AndroidInjector.Builder<App>()
+    @Component.Factory
+    interface Factory : AndroidInjector.Factory<App>
 }
