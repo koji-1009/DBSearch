@@ -7,7 +7,7 @@
 
         <variable
             name="word"
-            type="com.app.dr1009.dbsearch.entity.Word" />
+            type="com.dr1009.app.dbsearch.entity.Word" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

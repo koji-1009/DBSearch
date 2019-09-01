@@ -6,7 +6,7 @@ apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.app.dr1009.dbsearch"
+        applicationId "com.dr1009.app.dbsearch"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
