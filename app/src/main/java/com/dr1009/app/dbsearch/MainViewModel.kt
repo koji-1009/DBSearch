@@ -13,19 +13,19 @@ class MainViewModel @Inject constructor(
     private val dao: WordDao
 ) : ViewModel() {
 
-    val text = MutableLiveData<String>().apply { postValue("") }
+    val text = MutableLiveData<String>()
 
-    fun words(): LiveData<List<Word>> {
-        return Transformations.switchMap(text) {
-            if (it.isNullOrBlank()) {
-                dao.allLoad()
-            } else {
-                dao.loadSelect("%$it%")
-            }
+    fun words(): LiveData<List<Word>> = Transformations.switchMap(text) {
+        if (it.isNullOrBlank()) {
+            dao.allLoad()
+        } else {
+            dao.loadSelect("%$it%")
         }
     }
 
     fun addWord(word: String) {
+        if (word.isNotEmpty()) return
+
         thread { dao.insert(Word(word = word)) }
     }
 }
