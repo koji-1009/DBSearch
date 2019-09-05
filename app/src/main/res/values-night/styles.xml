@@ -2,6 +2,7 @@
 <resources>
 
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimary">@color/primaryColor</item>
         <item name="colorPrimaryDark">@color/primaryDarkColor</item>
         <item name="colorAccent">@color/secondaryDarkColor</item>
         <item name="android:textColorPrimary">@color/secondaryTextColor</item>
